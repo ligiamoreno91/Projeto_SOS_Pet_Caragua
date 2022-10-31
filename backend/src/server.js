@@ -19,9 +19,12 @@ app.set("views", path.join(__dirname, "views"));
 app.engine("handlebars", handlebars.engine({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
+//Public
+app.use(express.static(path.join(__dirname, "/public")));
+
 app.get("/", (req, res) => {
-  console.log("hello");
-  res.render("index");
+  message = "dd";
+  res.render("index", { message: message });
 });
 
 //Outros
