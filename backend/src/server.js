@@ -23,10 +23,21 @@ app.set("view engine", "handlebars");
 app.use(express.static(path.join(__dirname, "/public")));
 
 app.get("/", (req, res) => {
-  message = "dd";
-  res.render("index", { message: message });
+  res.render("index");
 });
 
+app.get("/contatos", (req, res) => {
+  res.render("contacts/index");
+});
+app.get("/doacoes", (req, res) => {
+  res.render("doacoes/index");
+});
+app.get("/sobrenos", (req, res) => {
+  res.render("aboutus/index");
+});
+app.get("/tipografia", (req, res) => {
+  res.render("typography/index");
+});
 //Outros
 const PORT = 3333;
 app.listen(PORT, () => {
