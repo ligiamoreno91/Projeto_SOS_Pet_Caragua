@@ -1,30 +1,28 @@
 {
-  "name": "finapi",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "Exercicio ignite",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "dev": "node_modules/.bin/nodemon src/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sheliga/finapi.git"
+    "url": "git+https://github.com/ligiamoreno91/Projeto_SOS_Pet_Caragua.git"
   },
-  "keywords": [
-    "rocketseat",
-    "ignite"
-  ],
-  "author": "Paulo Sheliga",
+  "author": "Paulo Cezar Sheliga",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Sheliga/finapi/issues"
+    "url": "https://github.com/ligiamoreno91/Projeto_SOS_Pet_Caragua/issues"
   },
-  "homepage": "https://github.com/Sheliga/finapi#readme",
+  "homepage": "https://github.com/ligiamoreno91/Projeto_SOS_Pet_Caragua#readme",
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.20"
   },
   "dependencies": {
-    "express": "^4.18.1",
-    "uuid": "^8.3.2"
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6"
   }
 }
